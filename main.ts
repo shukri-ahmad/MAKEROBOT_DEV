@@ -1,12 +1,20 @@
 /**
  * MAKEROBOT Complete Suite for micro:bit
- * Includes: TRACER JUNIOR, TRACER SENIOR, BLITZ REMOTE, BLITZ ROBOT, and MAKEROBOT RC
+ * Unified under the main MAKEROBOT category with subcategories.
  */
 
 // =================================================================
-// 1. MAKEROBOT RC (Cytron MDDRC5 - Independent Mode)
+// MAIN PARENT CATEGORY DEFINITION
 // =================================================================
-//% color="#d35400" icon="\uf1b9" weight=100 block="MAKEROBOT RC"
+//% color="#e67e22" icon="\uf1b9" weight=100 block="MAKEROBOT"
+namespace makerobot {
+}
+
+// =================================================================
+// 1. MAKEROBOT RC SUBCATEGORY (Cytron MDDRC5 - Independent Mode)
+// =================================================================
+//% color="#d35400" icon="\uf1b9" weight=100 block="RC"
+//% advanced=false parent=makerobot
 namespace makerobotRC {
 
     let leftPin = AnalogPin.P1;
@@ -92,9 +100,10 @@ namespace makerobotRC {
 }
 
 // =================================================================
-// 2. MAKEROBOT BLITZ ROBOT
+// 2. BLITZ ROBOT SUBCATEGORY
 // =================================================================
 //% color="#2980b9" icon="\uf1b9" weight=90 block="BLITZ ROBOT"
+//% advanced=false parent=makerobot
 namespace blitzRobot {
 
     export enum Direction {
@@ -158,9 +167,10 @@ namespace blitzRobot {
 }
 
 // =================================================================
-// 3. MAKEROBOT BLITZ REMOTE
+// 3. BLITZ REMOTE SUBCATEGORY
 // =================================================================
 //% color="#8e44ad" icon="\uf11b" weight=80 block="BLITZ REMOTE"
+//% advanced=false parent=makerobot
 namespace blitzRemote {
 
     export enum RemoteButton {
@@ -207,9 +217,10 @@ namespace blitzRemote {
 }
 
 // =================================================================
-// 4. MAKEROBOT TRACER JUNIOR
+// 4. TRACER JUNIOR SUBCATEGORY
 // =================================================================
 //% color="#2ecc71" icon="\uf06e" weight=70 block="TRACER JUNIOR"
+//% advanced=false parent=makerobot
 namespace tracerJunior {
 
     export enum SensorSide {
@@ -233,9 +244,10 @@ namespace tracerJunior {
 }
 
 // =================================================================
-// 5. MAKEROBOT TRACER SENIOR
+// 5. TRACER SENIOR SUBCATEGORY
 // =================================================================
 //% color="#27ae60" icon="\uf06e" weight=60 block="TRACER SENIOR"
+//% advanced=false parent=makerobot
 namespace tracerSenior {
 
     /**
